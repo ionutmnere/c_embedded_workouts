@@ -2,11 +2,15 @@
 #include <stdlib.h>
 int main()
 {
-    int some_uninitialized_var;
-    int *some_ptr = &some_uninitialized_var;
+    
+    int *student_ptr = (int*) malloc( 5* sizeof(int));
 
-    int *another_ptr = (int*) malloc(sizeof(int));
 
+    student_ptr[0] =1;
+    student_ptr[1] =1;
+    student_ptr[2] =1;
+    student_ptr[3] =1;
+    student_ptr[] =1;
 
     printf("value pointer address = %p \n", some_ptr );
     printf("value another pointer address = %p \n", another_ptr);
