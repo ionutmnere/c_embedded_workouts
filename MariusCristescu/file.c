@@ -2,9 +2,11 @@
 #include <stdlib.h>
 #include <errno.h>
 #include <string.h>
+
+#define ION = 45;
 int main()
 {
-    FILE *file_pointer = fopen("ceva2.txt", "r");
+    FILE *file_pointer = fopen("file.txt", "r");
     char data_buffer[255];
 
     fgets(data_buffer, 255, file_pointer);
