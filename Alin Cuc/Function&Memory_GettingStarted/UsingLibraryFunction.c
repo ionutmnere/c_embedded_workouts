@@ -37,9 +37,11 @@ int main()
 {
 
 	char first_string[] = "12121212121214421";
+	
 	float first_long = atol(first_string);
 
-	printf("We now have a long: %lf\n",first_long);
+	printf("We now have a long: %ld\n",first_long);
+
 	if(first_long == 12121212121214421){
 		printf("We can perform long comperison\n");
 	}
